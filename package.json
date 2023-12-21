@@ -1,0 +1,49 @@
+{
+  "name": "@n8io/date",
+  "description": "📆 A zero dependency date utility library that uses the native `Intl.DateTimeFormat` api to work with dates",
+  "version": "0.0.0",
+  "issues": {
+    "url": "https://github.com/n8io/date/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n8io/date"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && tsup src/index.ts --treeshake --format cjs,esm --dts",
+    "changeset": "npx changeset",
+    "format": "biome check --apply **/*.ts",
+    "lint": "biome lint ./src && tsc",
+    "release": "pnpm run build && pnpm update-badge && changeset publish",
+    "test": "vitest --coverage"
+  },
+  "author": {
+    "name": "Nate Clark",
+    "url": "https://github.com/n8io"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist/**/*.*"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "packageManager": "pnpm",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.10.5",
+    "@vitest/coverage-v8": "^1.1.0",
+    "check-code-coverage": "^1.10.5",
+    "lefthook": "^1.5.5",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}

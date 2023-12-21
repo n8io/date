@@ -1,0 +1,19 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+#
+
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      glob: "*.{js,ts,jsx,tsx}"
+      run: pnpm biome check --apply {staged_files} && pnpm biome lint {staged_files} && pnpm tsc && git stage {staged_files}
+      skip:
+        - merge
+        - rebase
+    block-protected-branch:
+      only:
+        - ref: main
+      run: echo "❌ You are not allowed to commit to main branch directly. Please create a PR instead." && exit 1
