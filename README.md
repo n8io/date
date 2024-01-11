@@ -2,7 +2,7 @@
 
 📆 A zero dependency, date utility library that uses the native `Intl.DateTimeFormat` api to work with `Date` objects.
 
-![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)
+[![check-code-coverage](https://img.shields.io/badge/code--coverage-100%25-brightgreen)](https://github.com/n8io/date/actions/workflows/publish.yml?query=branch%3Amain)
 [![Issues](https://img.shields.io/github/issues/n8io/date)](https://github.com/n8io/date/issues)
 [![License](https://img.shields.io/github/license/n8io/date)](https://github.com/n8io/date/blob/main/LICENSE)
 
