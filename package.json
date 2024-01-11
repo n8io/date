@@ -1,7 +1,7 @@
 {
   "name": "@n8io/date",
   "description": "📆 A zero dependency date utility library that uses the native `Intl.DateTimeFormat` api to work with dates",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "issues": {
     "url": "https://github.com/n8io/date/issues"
   },
