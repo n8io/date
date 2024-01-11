@@ -1,5 +1,12 @@
 # @n8io/date
 
+## 0.1.2
+
+### Patch Changes
+
+- fdb853f: chore: 📘 Update README
+- 627d775: fix: 🐛 Force plain date string to a more strict format
+
 ## 0.1.1
 
 ### Patch Changes
