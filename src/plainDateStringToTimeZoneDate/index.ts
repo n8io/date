@@ -6,7 +6,7 @@ import {
 } from '../getTimeZoneUtcOffsetInMinutes'
 
 const systemFormatter = makeTimeZoneOffsetFormatter(Intl.DateTimeFormat().resolvedOptions().timeZone)
-const formatRegex = /^\d{4}(?:-\d{2}(?:-\d{2}(?:(?:T|\s)\d{2}:\d{2}(?::\d{2}(?:\.\d{1,3})?)?)?)?)?$/
+const formatRegex = /^\d{4}-\d{2}-\d{2}(?:[ T]\d{2}:\d{2}(?::\d{2}(?:\.\d{1,3})?)?)$/
 
 const checkPlainDateString = (plainDateString: string): void => {
   if (!plainDateString) {
