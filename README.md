@@ -12,6 +12,10 @@
 pnpm install @n8io/date
 ```
 
+## Demo
+
+Don't take my word for it, [play with the demo examples](https://stackblitz.com/edit/n8io-date?file=index.ts).
+
 ## Compared to other libraries
 
 - Zero dependencies, has a tiny footprint with no extra bloat from time zone data
